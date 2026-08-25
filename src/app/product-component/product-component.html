@@ -1,0 +1,30 @@
+<!-- <h2>Cart Items: {{ Umesha }}</h2> -->
+
+<div class="Card-Container">
+
+@for (item of filteredProducts; track item.id) {
+     <div class="card">
+
+      <div class="image-box">
+
+         <img [src]="item.imageUrl" alt="product">
+
+      </div>
+
+      <h2>{{ item.name }}</h2>
+
+      <p>$ {{ item.price }}</p>
+
+      <button
+        class="cart-btn"
+        (click)="clickbutton()">
+
+        🛒 Add to cart
+
+      </button>
+
+    </div>
+
+  }
+
+</div>

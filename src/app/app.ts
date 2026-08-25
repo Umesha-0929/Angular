@@ -1,12 +1,24 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { ProductComponent } from './product-component/product-component';
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.css',
+  imports: [ProductComponent],
   templateUrl: './app.html',
+  styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal('EasyGO');
+
+  searchText: string = '';
+
+  cartCount: number = 0;
+
+  searchProduct(value: string) {
+    this.searchText = value.trim();
+  }
+
+  updateCartCount(count: number) {
+    this.cartCount = count;
+  }
+
 }
