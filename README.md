@@ -1,59 +1,118 @@
-# EasyGO
+# 📱 EasyGO
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.5.
+**EasyGO** is an Angular-based product browsing application designed with a clean and responsive user interface.
 
-## Development server
+The project demonstrates practical implementation of **Angular components, component communication, lifecycle hooks, data binding and reusable UI components**.
 
-To start a local development server, run:
+## ✨ Features
+
+- 🏠 Product browsing interface
+- 🔍 Product search
+- 🛒 Add-to-cart functionality
+- 📦 Product stock status
+- 📱 Product cards with reusable components
+- 🔐 Login screen
+- 🧭 Navigation between application sections
+- 📱 Responsive product-focused UI
+
+## 🛠️ Tech Stack
+
+- **Angular 22**
+- **TypeScript**
+- **HTML**
+- **CSS**
+- **Git & GitHub**
+
+## 🧩 Angular Concepts Used
+
+This project was developed to practice important Angular fundamentals:
+
+- `@Component`
+- Interpolation
+- Property binding
+- Event binding
+- `@Input`
+- `@Output`
+- `EventEmitter`
+- Component lifecycle hooks
+  - `ngOnInit`
+  - `ngOnChanges`
+  - `ngOnDestroy`
+- Reusable components
+- Component-based architecture
+- Angular control flow such as `@for` and `@if`
+
+## 🏗️ Project Structure
+
+```text
+src/
+├── app/
+│   ├── login/
+│   ├── product-component/
+│   ├── app.ts
+│   ├── app.html
+│   └── app.css
+│
+└── public/
+    └── application assets
+```
+
+## 🎯 Project Purpose
+
+The main purpose of EasyGO is to build a practical Angular application while learning and applying fundamental Angular concepts.
+
+The project focuses on understanding how Angular components communicate with each other and how reusable components can be used to create a structured frontend application.
+
+## ▶️ Run Locally
+
+### 1. Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the development server
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Then open:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```text
+http://localhost:4200/
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+The application automatically reloads when source files are modified.
 
-```bash
-ng generate --help
-```
+## 🏗️ Build
 
-## Building
-
-To build the project run:
+To create a production build:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The build output will be generated in the `dist/` directory.
 
-## Running unit tests
+## 🧪 Testing
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Run unit tests with:
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+## 📚 Learning Outcome
 
-For end-to-end (e2e) testing, run:
+Through this project, I gained practical experience in building Angular applications using **components, data binding, lifecycle hooks and parent-child component communication**.
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+⭐ Built as part of my Angular learning and software development journey.
